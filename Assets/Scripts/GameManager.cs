@@ -1,20 +1,19 @@
+
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-   
-    
     // Singleton
     public static GameManager Instance { get; private set; }
-    
+
     public bool GameOver { get; private set; }
-   
-    
+
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            Time.timeScale = 1f;
         }
         else
         {
@@ -25,18 +24,14 @@ public class GameManager : MonoBehaviour
     public void IsGameOver()
     {
         GameOver = true;
-    }
-    
-    
-    
-    void Start()
-    {
-        
+        Time.timeScale = 0f;
+
+        Debug.Log("Partida detenida");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ResetGame()
     {
-        
+        GameOver = false;
+        Time.timeScale = 1f;
     }
 }
