@@ -49,10 +49,10 @@ public class FlappyBirdSimulator : MonoBehaviour
 
         isDead = true;
 
-        if (GameManager.Instance != null)
-        {
-            GameManager.Instance.IsGameOver();
-        }
+        // if (GameManager.Instance != null)
+        // {
+        //     GameManager.Instance.IsGameOver();
+        // }
     }
 
     void Update()
