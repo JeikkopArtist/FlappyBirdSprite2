@@ -1,5 +1,7 @@
 
+using System.Drawing;
 using System.Numerics;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
@@ -20,8 +22,11 @@ public class FlappyBird : MonoBehaviour
     [SerializeField] private bool forcePhysic;
     [SerializeField] private bool rotateSimulation;
    
-   
-   
+    [Header("Clips de audio")]
+    [SerializeField] private AudioClip clipFlap;
+    [SerializeField] private AudioClip clipPoint;
+    [SerializeField] private AudioClip clipHit;
+    [SerializeField] private AudioClip clipDie;
     
     private GameManager _gameManager;
     private Rigidbody2D _rigidbody2D;
@@ -38,6 +43,9 @@ public class FlappyBird : MonoBehaviour
 
         // Configuración por código de las restricciones del motor
         _rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+        
+        //Referencias a componentes propios
+        _audioSource = GetComponent<AudioSource>();
     }
     
 
@@ -71,12 +79,16 @@ public class FlappyBird : MonoBehaviour
         {
             if (!isDead)
             {
-                if (other.tag == "Pipe" || other.tag == "Floor" || other.tag == "Ceil")
+                if (other.tag == "Goal")
+                {
+                    _audioSource.PlayOneShot(clipPoint);
+                }
+                else if (other.tag == "Pipe" || other.tag == "Floor" || other.tag == "Ceil")
                 {
                     // Lanza el sonido de Hit
-                      // _audioSource.PlayOneShot(clipHit);
+                       _audioSource.PlayOneShot(clipHit);
                     TriggerGameOver($"Colisión con: {other.name}", other.tag == "Floor");
-                    // _gameManager.OnGameOver();
+                     _gameManager.OnGameOver();
                 }
             }
             else
@@ -91,15 +103,20 @@ public class FlappyBird : MonoBehaviour
     }
     void Update()
     {
+        if (isDead)
+        {
+            return;
+        }
         // 1. Captura de Input en el ciclo de Render
         if (flapAction.action.WasPressedThisFrame())
         {
             jumpRequested = true;
             _animator.SetTrigger("Flap");
+            _audioSource.PlayOneShot(clipFlap);
         }
         
         _animator.SetFloat("Speed", _rigidbody2D.linearVelocity.y);
-        _animator.SetBool("IsDead", isDead);
+        _animator.SetBool("isDead", isDead);
        
     }
     void FixedUpdate()
@@ -128,14 +145,21 @@ public class FlappyBird : MonoBehaviour
         {
             // inicia el descenso
             _rigidbody2D.linearVelocity = Vector2.down;
-            // Invoke(nameof(FallAfterHit), clipHit.length);
+            
         }
         else
         {
-            //_rigidbody2D.linearVelocity = Vector2.zero;
+            _rigidbody2D.linearVelocity = Vector2.zero;
             _rigidbody2D.constraints = RigidbodyConstraints2D.FreezePosition;
         }
+        Invoke(nameof(FallAfterHit), clipHit.length);
         Debug.Log($"[GAME OVER] {reason}");
+    }
+
+
+    private void FallAfterHit()
+    {
+        _audioSource.PlayOneShot(clipDie);
     }
 }
 
