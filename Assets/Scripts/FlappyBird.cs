@@ -1,7 +1,5 @@
 
-using System.Drawing;
-using System.Numerics;
-using TMPro;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Vector2 = UnityEngine.Vector2;
@@ -14,9 +12,9 @@ public class FlappyBird : MonoBehaviour
     
     [Header("Parámetros del Salto")]
     [SerializeField] private float jumpForce = 5.0f;
-    [SerializeField] private float maxUpwardRotation = 30.0f;
-    [SerializeField] private float maxDownwardRotation = -90.0f;
-    [SerializeField] private float rotationSpeed = 5.0f;
+    // [SerializeField] private float maxUpwardRotation = 30.0f;
+    // [SerializeField] private float maxDownwardRotation = -90.0f;
+    // [SerializeField] private float rotationSpeed = 5.0f;
 
     [Header("Físicas")]
     [SerializeField] private bool forcePhysic;
@@ -34,7 +32,7 @@ public class FlappyBird : MonoBehaviour
     private AudioSource _audioSource;
     private bool jumpRequested;
     private bool isDead = false;
-    
+    private Vector2 position;
 
     void Awake()
     {
@@ -46,6 +44,8 @@ public class FlappyBird : MonoBehaviour
         
         //Referencias a componentes propios
         _audioSource = GetComponent<AudioSource>();
+        
+        position = _rigidbody2D.position;
     }
     
 
@@ -81,6 +81,7 @@ public class FlappyBird : MonoBehaviour
             {
                 if (other.tag == "Goal")
                 {
+                    _gameManager.SumarPuntos();
                     _audioSource.PlayOneShot(clipPoint);
                 }
                 else if (other.tag == "Pipe" || other.tag == "Floor" || other.tag == "Ceil")
@@ -160,6 +161,15 @@ public class FlappyBird : MonoBehaviour
     private void FallAfterHit()
     {
         _audioSource.PlayOneShot(clipDie);
+    }
+    
+    public void ResetPosition()
+    {
+        _rigidbody2D.position = position;
+        _rigidbody2D.linearVelocity = Vector2.zero;
+        _animator.Rebind();
+        _animator.Update(0f);
+        isDead = false;
     }
 }
 

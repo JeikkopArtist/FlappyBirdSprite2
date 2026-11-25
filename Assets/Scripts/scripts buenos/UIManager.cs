@@ -5,44 +5,62 @@ public class UIManager : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI puntos;
+    [SerializeField] private GameObject panelGameOver;
 
-    private void Start()
-    {
-        TextPoints();
-    }
+        
+    private GameManager _gameManager;
 
-    private void Update()
+
+    // private void OnEnable()
+    // {
+    //     _gameManager = GameManager.Instance;
+    //     _gameManager.RegistraUIManager(this);
+    // }
+    //
+    
+
+    // private void OnDisable()
+    // {
+    //     _gameManager.DesregistraUIManager(this);
+    // }
+    
+    
+
+    public void Start()
     {
-        TextPoints();
+        Showpoints();
+        panelGameOver.SetActive(false);
     }
     
-    public void TextPoints()
-    {
-        puntos.text = " ";
-    }
-
-    private void UpdateUITexts()
-    {
-        // Si el GameManager aún no ha arrancado, no hacemos nada para evitar errores
-        if (GameManager.Instance == null) return;
-        if (puntos != null)
-        {
-            if (GameManager.Instance.GameOver)
-            {
-                puntos.text = "";
-            }
-        }
-    }
-
     public void Showpoints()
     {
         if  (GameManager.Instance == null) return;
         
-        if (puntos != null)
-        {
-            if (puntos != null)
-                puntos.text = "Puntos: " + GameManager.Instance.Puntos;
-        }
+            
+        puntos.text = "Puntos: " + GameManager.Instance.Puntos.ToString();
+        
+    }
+    
+    
+
+    public void OnGameOver()
+    {
        
+            panelGameOver.SetActive(true);
+        
+            
+       
+    }
+    
+    public void OnReset()
+    {
+        panelGameOver.SetActive(false);
+        Showpoints();
+    }
+    
+    public void NewGame()
+    {
+       OnReset();
+       GameManager.Instance.InicializarJuego();
     }
 }

@@ -10,7 +10,9 @@ public class GameManager : MonoBehaviour
     private AudioSource  _audioSource;
     [SerializeField] private bool music;
     private PipePoolManager _pipePoolManager;
-
+    [SerializeField]  private FlappyBird player;
+    [SerializeField]  private UIManager _uiManager;
+    
 
     private void Awake()
     {
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour
 
         _pipePoolManager = GetComponent<PipePoolManager>();
         _audioSource = GetComponent<AudioSource>();
+        
     }
     private void Start()
     {
@@ -40,6 +43,8 @@ public class GameManager : MonoBehaviour
         GameOver = false;
         Puntos = 0;
         _pipePoolManager.Setup();
+        _uiManager.Showpoints();
+        player.ResetPosition();
         if (_audioSource)
         {
             if (_audioSource.isPlaying) _audioSource.Stop();
@@ -47,15 +52,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SumarPuntos()
+    {
+        Puntos++;
+        _uiManager.Showpoints();
+    }
+
     public void OnGameOver()
     {
         GameOver = true;
+        _uiManager.OnGameOver();
         
     }
-    
-   
-    
-    
 
-   
+
+    public void RegistraUIManager(UIManager uiManager)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void DesregistraUIManager(UIManager uiManager)
+    {
+        throw new System.NotImplementedException();
+    }
 }
