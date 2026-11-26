@@ -340,177 +340,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &741480913
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4634193188618868712, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_Name
-      value: Tuberia (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.78
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
---- !u!1001 &846109218
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4634193188618868712, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_Name
-      value: Tuberia (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 20.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -5.31
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
---- !u!1001 &1300901856
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4634193188618868712, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_Name
-      value: Tuberia (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -4.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
 --- !u!1 &1628836791
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,63 +454,6 @@ MonoBehaviour:
   ceilY: 0
   pipeSize: {x: 1, y: 9}
   birdRadius: 0.35
---- !u!1001 &1719441102
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4634193188618868712, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_Name
-      value: Tuberia (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
 --- !u!1 &1839634207
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +483,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796a58cde006b044095254330aedee30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  music: 0
+  player: {fileID: 0}
+  _uiManager: {fileID: 0}
 --- !u!4 &1839634209
 Transform:
   m_ObjectHideFlags: 0
@@ -736,6 +511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1884268526}
   - component: {fileID: 1884268525}
+  - component: {fileID: 1884268527}
   m_Layer: 0
   m_Name: pipe completa_0
   m_TagString: Untagged
@@ -811,73 +587,29 @@ Transform:
   m_GameObject: {fileID: 1884268524}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.46, y: -3.05, z: 0}
+  m_LocalPosition: {x: 1.46, y: -2.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &7581913662571599743
-PrefabInstance:
+--- !u!114 &1884268527
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4634193188618868712, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_Name
-      value: Tuberia
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172505178410623140, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2a9f9200bad120f4d9f7b4a50e67a612, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884268524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15641cb4dd602d946a24c24470214e77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TuberiaScript
+  speed: 3
+  despawnX: -10
+  respawnX: 10
+  minY: -3.09
+  maxY: 2.5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -885,10 +617,5 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1628836793}
-  - {fileID: 7581913662571599743}
-  - {fileID: 1719441102}
-  - {fileID: 1300901856}
-  - {fileID: 741480913}
-  - {fileID: 846109218}
   - {fileID: 1839634209}
   - {fileID: 1884268526}
